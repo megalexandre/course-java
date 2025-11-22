@@ -1,0 +1,28 @@
+{
+  "name": "Java 21 Development",
+
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-debug",
+        "ms-vscode-remote.remote-containers",
+        "alphabotsec.vscode-eclipse-keybindings",
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-gradle",
+        "vscjava.vscode-java-test"
+      ],
+      "settings": {
+        "workbench.colorTheme": "Solarized Dark"
+      }
+    }
+  },
+
+
+  "postCreateCommand": "gradle dependencies",
+
+  "remoteUser": "gradle"
+}
