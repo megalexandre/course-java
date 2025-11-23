@@ -1,9 +1,14 @@
 {
-  "name": "Java 21 Development",
+  "name": "Course in java 25",
 
   "build": {
-    "dockerfile": "Dockerfile"
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "args": {},
+    "tag": "course-java:25"
   },
+
+  "runArgs": ["--name", "course-in-java-25"],
 
   "customizations": {
     "vscode": {
@@ -22,7 +27,7 @@
   },
 
 
-  "postCreateCommand": "gradle dependencies",
+  "postCreateCommand": "gradle build",
 
   "remoteUser": "gradle"
 }
